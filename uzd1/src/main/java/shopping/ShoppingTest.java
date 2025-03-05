@@ -127,7 +127,7 @@ public class ShoppingTest {
         try {
             Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt(); // Reset the interrupt flag.
+            Thread.currentThread().interrupt();
             throw new RuntimeException("Interrupted while waiting", e);
         }
     }
